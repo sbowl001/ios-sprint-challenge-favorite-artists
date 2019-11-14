@@ -17,6 +17,7 @@
 		A36BC1DA237D08CF00ACB436 /* ArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1D9237D08CF00ACB436 /* ArtistDetailViewController.m */; };
 		A36BC1DD237D091900ACB436 /* ArtistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1DC237D091900ACB436 /* ArtistTableViewCell.m */; };
 		A36BC1E0237D093A00ACB436 /* LSIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1DF237D093A00ACB436 /* LSIArtist.m */; };
+		A36BC1E3237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1E2237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		A36BC1DC237D091900ACB436 /* ArtistTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistTableViewCell.m; sourceTree = "<group>"; };
 		A36BC1DE237D093A00ACB436 /* LSIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtist.h; sourceTree = "<group>"; };
 		A36BC1DF237D093A00ACB436 /* LSIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtist.m; sourceTree = "<group>"; };
+		A36BC1E1237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSIArtist+NSJSONSerialization.h"; sourceTree = "<group>"; };
+		A36BC1E2237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LSIArtist+NSJSONSerialization.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 		A36BC1D4237D049B00ACB436 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				A36BC1E1237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.h */,
+				A36BC1E2237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				A36BC1DD237D091900ACB436 /* ArtistTableViewCell.m in Sources */,
 				A36BC1B9237D040300ACB436 /* AppDelegate.m in Sources */,
 				A36BC1CA237D040400ACB436 /* main.m in Sources */,
+				A36BC1E3237DA4CA00ACB436 /* LSIArtist+NSJSONSerialization.m in Sources */,
 				A36BC1BC237D040300ACB436 /* SceneDelegate.m in Sources */,
 				A36BC1E0237D093A00ACB436 /* LSIArtist.m in Sources */,
 			);
