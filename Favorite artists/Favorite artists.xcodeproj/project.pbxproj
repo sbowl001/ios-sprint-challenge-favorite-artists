@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		A36BC1B9237D040300ACB436 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1B8237D040300ACB436 /* AppDelegate.m */; };
 		A36BC1BC237D040300ACB436 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1BB237D040300ACB436 /* SceneDelegate.m */; };
-		A36BC1BF237D040300ACB436 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1BE237D040300ACB436 /* ViewController.m */; };
 		A36BC1C2237D040300ACB436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36BC1C0237D040300ACB436 /* Main.storyboard */; };
 		A36BC1C4237D040400ACB436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36BC1C3237D040400ACB436 /* Assets.xcassets */; };
 		A36BC1C7237D040400ACB436 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36BC1C5237D040400ACB436 /* LaunchScreen.storyboard */; };
 		A36BC1CA237D040400ACB436 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1C9237D040400ACB436 /* main.m */; };
+		A36BC1D7237D08BB00ACB436 /* ArtistsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1D6237D08BB00ACB436 /* ArtistsTableViewController.m */; };
+		A36BC1DA237D08CF00ACB436 /* ArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1D9237D08CF00ACB436 /* ArtistDetailViewController.m */; };
+		A36BC1DD237D091900ACB436 /* ArtistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1DC237D091900ACB436 /* ArtistTableViewCell.m */; };
+		A36BC1E0237D093A00ACB436 /* LSIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = A36BC1DF237D093A00ACB436 /* LSIArtist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		A36BC1B8237D040300ACB436 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A36BC1BA237D040300ACB436 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		A36BC1BB237D040300ACB436 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		A36BC1BD237D040300ACB436 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A36BC1BE237D040300ACB436 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A36BC1C1237D040300ACB436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A36BC1C3237D040400ACB436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A36BC1C6237D040400ACB436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A36BC1C8237D040400ACB436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A36BC1C9237D040400ACB436 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A36BC1D5237D08BB00ACB436 /* ArtistsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistsTableViewController.h; sourceTree = "<group>"; };
+		A36BC1D6237D08BB00ACB436 /* ArtistsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistsTableViewController.m; sourceTree = "<group>"; };
+		A36BC1D8237D08CF00ACB436 /* ArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewController.h; sourceTree = "<group>"; };
+		A36BC1D9237D08CF00ACB436 /* ArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewController.m; sourceTree = "<group>"; };
+		A36BC1DB237D091900ACB436 /* ArtistTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistTableViewCell.h; sourceTree = "<group>"; };
+		A36BC1DC237D091900ACB436 /* ArtistTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistTableViewCell.m; sourceTree = "<group>"; };
+		A36BC1DE237D093A00ACB436 /* LSIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIArtist.h; sourceTree = "<group>"; };
+		A36BC1DF237D093A00ACB436 /* LSIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIArtist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +70,65 @@
 		A36BC1B6237D040300ACB436 /* Favorite artists */ = {
 			isa = PBXGroup;
 			children = (
+				A36BC1D4237D049B00ACB436 /* Helper */,
+				A36BC1D3237D049300ACB436 /* Model Controller */,
+				A36BC1D2237D048B00ACB436 /* Model */,
+				A36BC1D1237D048100ACB436 /* View Controllers */,
+				A36BC1D0237D046900ACB436 /* Resources */,
+				A36BC1C0237D040300ACB436 /* Main.storyboard */,
+				A36BC1C8237D040400ACB436 /* Info.plist */,
+			);
+			path = "Favorite artists";
+			sourceTree = "<group>";
+		};
+		A36BC1D0237D046900ACB436 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A36BC1B7237D040300ACB436 /* AppDelegate.h */,
 				A36BC1B8237D040300ACB436 /* AppDelegate.m */,
 				A36BC1BA237D040300ACB436 /* SceneDelegate.h */,
 				A36BC1BB237D040300ACB436 /* SceneDelegate.m */,
-				A36BC1BD237D040300ACB436 /* ViewController.h */,
-				A36BC1BE237D040300ACB436 /* ViewController.m */,
-				A36BC1C0237D040300ACB436 /* Main.storyboard */,
-				A36BC1C3237D040400ACB436 /* Assets.xcassets */,
-				A36BC1C5237D040400ACB436 /* LaunchScreen.storyboard */,
-				A36BC1C8237D040400ACB436 /* Info.plist */,
 				A36BC1C9237D040400ACB436 /* main.m */,
+				A36BC1C5237D040400ACB436 /* LaunchScreen.storyboard */,
+				A36BC1C3237D040400ACB436 /* Assets.xcassets */,
 			);
-			path = "Favorite artists";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A36BC1D1237D048100ACB436 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A36BC1D5237D08BB00ACB436 /* ArtistsTableViewController.h */,
+				A36BC1D6237D08BB00ACB436 /* ArtistsTableViewController.m */,
+				A36BC1D8237D08CF00ACB436 /* ArtistDetailViewController.h */,
+				A36BC1D9237D08CF00ACB436 /* ArtistDetailViewController.m */,
+				A36BC1DB237D091900ACB436 /* ArtistTableViewCell.h */,
+				A36BC1DC237D091900ACB436 /* ArtistTableViewCell.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A36BC1D2237D048B00ACB436 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A36BC1DE237D093A00ACB436 /* LSIArtist.h */,
+				A36BC1DF237D093A00ACB436 /* LSIArtist.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A36BC1D3237D049300ACB436 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		A36BC1D4237D049B00ACB436 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,10 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A36BC1BF237D040300ACB436 /* ViewController.m in Sources */,
+				A36BC1DA237D08CF00ACB436 /* ArtistDetailViewController.m in Sources */,
+				A36BC1D7237D08BB00ACB436 /* ArtistsTableViewController.m in Sources */,
+				A36BC1DD237D091900ACB436 /* ArtistTableViewCell.m in Sources */,
 				A36BC1B9237D040300ACB436 /* AppDelegate.m in Sources */,
 				A36BC1CA237D040400ACB436 /* main.m in Sources */,
 				A36BC1BC237D040300ACB436 /* SceneDelegate.m in Sources */,
+				A36BC1E0237D093A00ACB436 /* LSIArtist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
