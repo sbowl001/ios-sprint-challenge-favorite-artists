@@ -119,8 +119,18 @@
                         <viewLayoutGuide key="safeArea" id="E0R-pd-nOl"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Artist" largeTitleDisplayMode="always" id="oWU-kd-jvD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Idp-ui-ev1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Idp-ui-ev1">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="bFP-Xq-SHe" id="5fT-sz-fT1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bioTextView" destination="4AT-c1-Qq1" id="Lal-um-LAb"/>
+                        <outlet property="nameLabel" destination="T9h-xg-ohC" id="2ds-PE-alj"/>
+                        <outlet property="searchBar" destination="Xe3-fV-bao" id="cIW-pA-2HT"/>
+                        <outlet property="yearFormedLabel" destination="GYg-aV-ylX" id="Bsg-em-OJq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gb0-us-m6j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

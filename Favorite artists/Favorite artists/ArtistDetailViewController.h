@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+
 @class ArtistController;
 @class LSIArtist;
 
-@interface ArtistDetailViewController : UIViewController
-
+@interface ArtistDetailViewController : UIViewController <UISearchBarDelegate>
 @property (nonatomic) ArtistController *artistController;
 @property (nonatomic) LSIArtist *artist;
 @end
