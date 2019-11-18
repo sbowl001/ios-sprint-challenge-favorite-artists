@@ -43,8 +43,8 @@
     LSIArtist *artist = [self.artistController.artists objectAtIndex:indexPath.row];
     
     cell.textLabel.text = artist.artist;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Formed in %@", artist.yearFormed];
-    
+//    cell.detailTextLabel.text = [NSString stringWithFormat:@"Formed in %@", artist.yearFormed];
+    cell.detailTextLabel.text = artist.yearFormed;
     return cell;
 }
 
