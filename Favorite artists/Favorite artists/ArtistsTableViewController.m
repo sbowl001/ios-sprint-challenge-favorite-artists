@@ -43,7 +43,7 @@
     LSIArtist *artist = [self.artistController.artists objectAtIndex:indexPath.row];
     
     cell.textLabel.text = artist.artist;
-    cell.detailTextLabel.text = artist.yearFormed;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Formed in %@", artist.yearFormed];
     
     return cell;
 }
@@ -77,5 +77,14 @@
        }
 }
  
+
+@synthesize artistController = _artistController;
+-(ArtistController *)artistController
+{
+    if (!_artistController){
+        _artistController = [[ArtistController alloc] init];
+    }
+    return _artistController;
+}
 
 @end
