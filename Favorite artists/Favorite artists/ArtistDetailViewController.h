@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class ArtistController;
+@class LSIArtist;
 
 @interface ArtistDetailViewController : UIViewController
 
+@property (nonatomic) ArtistController *artistController;
+@property (nonatomic) LSIArtist *artist;
 @end
 
-NS_ASSUME_NONNULL_END
+ 
