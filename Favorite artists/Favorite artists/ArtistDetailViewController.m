@@ -30,7 +30,7 @@
 
 -(void)updateViews
 {
-//    self.title = self.artist.artist ?: "Search for Artist";
+    self.title = self.artist.artist ?: @"Search for Artist";
     if(!self.isViewLoaded || !self.artist) {return;}
     
     self.nameLabel.text = self.artist.artist;

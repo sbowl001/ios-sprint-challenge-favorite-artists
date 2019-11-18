@@ -29,11 +29,13 @@
 - (void)addArtist: (LSIArtist *)anArtist
 {
     [self.internalArtists addObject:anArtist];
+    [self saveArtistsToDcoumentDirectory];
 }
 
 -(void)removeArtist: (LSIArtist *)anArtist
 {
     [self.internalArtists removeObject:anArtist];
+    [self saveArtistsToDcoumentDirectory];
 }
 
 -(NSArray<LSIArtist *> *)artists
@@ -93,5 +95,32 @@ static NSString *artistBaseURLString = @"https://theaudiodb.com/api/v1/json/1/se
     }] resume];
 }
 
-//TO Do: SaveArtist and Load artist with UserDefaults 
+//TO Do: SaveArtist and Load artist with UserDefaults
+
+-(void)loadArtistsFromDocumentDirectory
+{
+     NSURL *documentDirectory = [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:@"artists.plist"];
+    
+    NSMutableArray *artistDictionaries = [[NSDictionary alloc] initWithContentsOfURL:documentDirectory][@"artists"];
+    
+    for (NSDictionary *dictionary in artistDictionaries) {
+        LSIArtist *artist = [[LSIArtist alloc] initWithDictionary:dictionary];
+        [self.internalArtists addObject:artist];
+    }
+}
+
+-(void)saveArtistsToDcoumentDirectory
+{
+    NSURL *documentDirectory = [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:@"artists.plist"];
+       
+       NSMutableArray *artistDictionaries = [[NSMutableArray alloc] init];
+       
+       for (LSIArtist *artist in self.internalArtists) {
+           [artistDictionaries addObject:[artist toDictionary]];
+       }
+       
+       NSDictionary *dictionary = @{@"artists":artistDictionaries};
+       
+       [dictionary writeToURL:documentDirectory atomically:YES];
+}
 @end

@@ -22,7 +22,7 @@ typedef void (^FetchArtistCompletionHandler)(LSIArtist *artist, NSError *error);
 -(void)removeArtist: (LSIArtist *)anArtist;
 
 -(void)fetchArtistWithName:(NSString *)artist completionHandler:(FetchArtistCompletionHandler)completionHandler;
-
+-(void)loadArtistsFromDocumentDirectory;
 @end
 
  
